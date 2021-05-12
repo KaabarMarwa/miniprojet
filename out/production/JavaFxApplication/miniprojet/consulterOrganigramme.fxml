@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miniprojet.Controller">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF0F5;" BorderPane.alignment="CENTER">
+            <children>
+                <TableView prefHeight="348.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn prefWidth="105.20001524686813" text="niveau" />
+                        <TableColumn prefWidth="117.60000610351562" text="departement" />
+                        <TableColumn prefWidth="122.39994812011719" text="employe" />
+                        <TableColumn prefWidth="118.5999755859375" text="direction" />
+                        <TableColumn prefWidth="139.0" text="metier" />
+                    </columns>
+                </TableView>
+                <Button fx:id="retourButton" layoutX="68.0" layoutY="359.0" mnemonicParsing="false" onAction="#retourButtonOnAction" prefHeight="26.0" prefWidth="124.0" style="-fx-background-color: #87CEFA;" text="retour" />
+                <Button fx:id="ModifierEmployeButton" layoutX="413.0" layoutY="359.0" mnemonicParsing="false" onAction="#ModifierEmployesButtonOnAction" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: lightgreen;" text="modifier" />
+                <Button fx:id="ajouterEmployeButton" layoutX="243.0" layoutY="359.0" mnemonicParsing="false" onAction="#AjouterEmployeButtonOnAction" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #FFB6C1;" text="ajouter" />
+            </children></AnchorPane>
+    </center>
+</BorderPane>

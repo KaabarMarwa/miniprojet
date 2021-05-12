@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miniprojet.Controller">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF0F5;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="80.0" layoutY="66.0" prefHeight="18.0" prefWidth="105.0" text="nom:" />
+                <Label layoutX="81.0" layoutY="102.0" prefHeight="18.0" prefWidth="107.0" text="prenom:" />
+                <Label layoutX="81.0" layoutY="144.0" prefHeight="18.0" prefWidth="105.0" text="titre" />
+                <Label layoutX="77.0" layoutY="191.0" prefHeight="18.0" prefWidth="97.0" text="affectation" />
+                <Label layoutX="80.0" layoutY="226.0" prefHeight="18.0" prefWidth="112.0" text="niveau post" />
+                <Label layoutX="79.0" layoutY="268.0" prefHeight="18.0" prefWidth="115.0" text="salaire" />
+                <Label layoutX="79.0" layoutY="309.0" prefHeight="18.0" prefWidth="110.0" text="equipe" />
+                <Button fx:id="ajouterEmployeButton" layoutX="395.0" layoutY="349.0" mnemonicParsing="false" onAction="#AjouterEmployeButtonOnAction" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: lightgreen;" text="ajouter" />
+                <Button fx:id="annulerButton" layoutX="85.0" layoutY="349.0" mnemonicParsing="false" onAction="#annulerButtonOnAction" prefHeight="26.0" prefWidth="129.0" style="-fx-background-color: #87CEFA;" text="annuler" />
+                <TextField fx:id="prenomemp" layoutX="200.0" layoutY="98.0" prefHeight="26.0" prefWidth="321.0" />
+                <TextField fx:id="titreemp" layoutX="200.0" layoutY="140.0" prefHeight="26.0" prefWidth="323.0" />
+                <TextField fx:id="salaire_annuelemp" layoutX="202.0" layoutY="264.0" prefHeight="26.0" prefWidth="323.0" />
+                <TextField fx:id="equipeemp" layoutX="201.0" layoutY="305.0" prefHeight="26.0" prefWidth="325.0" />
+                <TextField fx:id="nomemp" layoutX="202.0" layoutY="62.0" prefHeight="26.0" prefWidth="316.0" />
+                <Label layoutX="144.0" layoutY="14.0" prefHeight="46.0" prefWidth="311.0" text="ajouter un employe" textAlignment="CENTER" textFill="#f54949">
+                    <font>
+                        <Font name="System Bold" size="31.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="affectationemp" layoutX="202.0" layoutY="178.0" prefHeight="26.0" prefWidth="318.0" />
+                <TextField fx:id="niveaupostemp" layoutX="202.0" layoutY="223.0" prefHeight="26.0" prefWidth="321.0" />
+                <Button fx:id="retourButton" layoutX="239.0" layoutY="350.0" mnemonicParsing="false" onAction="#retourButtonOnAction" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #FFB6C1;" text="retour" />
+            </children></AnchorPane>
+    </center>
+</BorderPane>
+

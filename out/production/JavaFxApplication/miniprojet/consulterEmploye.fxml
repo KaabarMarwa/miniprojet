@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFF0F5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miniprojet.Controller">
+    <bottom>
+        <AnchorPane prefHeight="434.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="600.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Fichier">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Editer">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Aide">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <TreeTableView layoutY="93.0" prefHeight="260.0" prefWidth="600.0">
+                    <columns>
+                        <TreeTableColumn prefWidth="75.0" text="num_emp" />
+                        <TreeTableColumn prefWidth="75.0" text="nom" />
+                        <TreeTableColumn prefWidth="75.0" text="prenom" />
+                        <TreeTableColumn prefWidth="75.0" text="titre" />
+                        <TreeTableColumn prefWidth="75.0" text="affectation" />
+                        <TreeTableColumn prefWidth="75.0" text="niveau_post" />
+                        <TreeTableColumn prefWidth="90.19992065429688" text="salaire_annuel" />
+                        <TreeTableColumn prefWidth="60.20001220703125" text="equipe" />
+                    </columns>
+                </TreeTableView>
+                <Button fx:id="ModifierEmployeButton" layoutX="396.0" layoutY="359.0" mnemonicParsing="false" onAction="#ModifierEmployesButtonOnAction" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: lightgreen;" text="Modier" />
+                <Button fx:id="retourButton" layoutX="58.0" layoutY="359.0" mnemonicParsing="false" onAction="#retourButtonOnAction" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #87CEFA;" text="Retour" />
+                <Button fx:id="obtenirinformationsButton" layoutX="451.0" layoutY="46.0" mnemonicParsing="false" text="obtenir informations" />
+                <Button fx:id="insererButton" layoutX="219.0" layoutY="359.0" mnemonicParsing="false" onAction="#InsererButtonOnAction" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #FFB6C1;" text="Inserer" />
+                <Label layoutX="42.0" layoutY="50.0" text="num emp" />
+                <TextField fx:id="num_emp" layoutX="121.0" layoutY="46.0" prefHeight="26.0" prefWidth="319.0" />
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>
